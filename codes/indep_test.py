@@ -1,4 +1,3 @@
-# configue
 import re
 
 import numpy as np
@@ -8,7 +7,6 @@ from CGABepi1 import * #configure
 from sklearn.metrics import roc_auc_score, average_precision_score
 np.seterr(divide='ignore', invalid='ignore')  #
 
-# 为了保证实验结果可以复现，我们经常会把各种random seed固定在某一个值
 USE_CUDA = torch.cuda.is_available()
 random_seed = 0
 random.seed(0)
